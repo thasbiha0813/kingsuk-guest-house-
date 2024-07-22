@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsukh Feedback From</title>
+    <Link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="box">
+        <div class="brand-title">
+            Kingsukh Review From
+        </div>
+        <hr/>
+        <div class="inputs">
+                    <form onsubmit="return validateForm()" name="review" method="post">
+                        <table>
+                          <tr>
+                              <th><label for="fname">First Name</label></th>
+                              <th><label for="lname">Last Name</label></th>
+                            </tr>
+                            <tr>
+                              <td><input type="text" id="fname" name="First Name" placeholder="First Name" ></td>
+                              <td><input type="text" id="lname" name="Last Name" placeholder="Last Name" ></td>
+                          </tr>
+                      </table><br><br>
+                      <table>
+                        <tr>
+                            <th><label for="phone">Phone number</label></th>
+                            <th><label for="email">Email</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="tel" id="phone" name="phone"  placeholder="Eg:8681960844" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" ></td>
+                            <td><input type="email" id="email" name="email" placeholder="example@example.com" ></td>
+                        </tr>
+                      </table>
+                      <h3>Overall experience in our guest house:</h3>
+                      <div class="container">
+                          <table>
+                            <tr>
+                                <th><img src="https://essykings.github.io/JavaScript/svg-emojis/Neutral.svg" class="emoji"></img></th>
+                                <th><input id="slider" type="range" min="0" max="100" value="50" /></th>
+                                <th><p class="rating" id="message">&nbsp;</p></th>
+                            </tr>
+                          </table>
+                        </div>
+                        <h3>Any other suggestions for us?</h3>
+                        <textarea placeholder="Write your comments here...."></textarea>
+                      <hr/>
+                      <div>
+                          <center><input type="submit" name="SUBMIT" onclick="gohome()"></center>
+                      </div>
+                     
+                  </form>
+              </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
